@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logginPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundloggin" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="106dp"
+        android:layout_height="137dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/ellugartext"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/jua_normal"
+        android:text="@string/el_lugar_mas_seguro_para_tu_dinero"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/login_buttom"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ellugartext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="201dp"
+        android:background="@drawable/boton_redondeado"
+        android:fontFamily="@font/jua_normal"
+        android:text="Crear cuenta nueva"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_below="@id/login_buttom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/jua_normal"
+        android:text="Ya tiene cuenta?"
+        android:textColor="@color/azulalkeosc" />
+
+</RelativeLayout>
+
