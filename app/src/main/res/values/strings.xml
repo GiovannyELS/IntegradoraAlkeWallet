@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">alkewalletapp</string>
     <string name="el_lugar_mas_seguro_para_tu_dinero"> El lugar mas seguro para tu dinero</string>
+    <string name="ultimas_transacciones">Ultimas transacciones</string>
+    <string name="ingresar_dinero">Ingresar Dinero</string>
+    <string name="enviar_dinero">Enviar Dinero</string>
 
 </resources>
