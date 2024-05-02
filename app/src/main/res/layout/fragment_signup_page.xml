@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/flechaverde">
+    android:background="@drawable/flechaverde"
+    tools:context=".fragmentos.SignupPage">
 
 
     <TextView
-        android:id="@+id/texTitulo2"
+        android:id="@+id/textregistrarseytransferir"
         android:layout_width="315dp"
         android:layout_height="104dp"
         android:fontFamily="@font/jua_normal"
-        android:text="Registrarse y empezar a tranferir"
+        android:text="@string/registrarse_y_empezar_a_tranferir"
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -20,16 +21,16 @@
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
         app:layout_constraintVertical_bias="1.0"
-        app:lineHeight="52sp" />
+        />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textnombresignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/jua_normal"
-        android:text="Nombre"
-        android:textSize="16dp"
+        android:text="@string/nombre"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.0"
@@ -38,36 +39,36 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/rectanglesignup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textnombresignup"
         app:layout_constraintVertical_bias="0.01"
         app:srcCompat="@drawable/rectangle" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textingresanombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="202dp"
         android:fontFamily="@font/jua_normal"
-        android:text="Ingresa tu nombre"
+        android:text="@string/ingresa_tu_nombre"
         android:textColor="@color/grisAlke"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/rectanglesignup1"
         app:layout_constraintHorizontal_bias="0.692"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/rectanglesignup1"
+        app:layout_constraintTop_toBottomOf="@+id/textnombresignup"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/rectanglesignup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,12 +80,12 @@
         app:srcCompat="@drawable/rectangle" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textapellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/jua_normal"
-        android:text="Apellido"
-        android:textSize="16dp"
+        android:text="@string/apellido"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.0"
@@ -93,12 +94,12 @@
         app:layout_constraintVertical_bias="0.325" />
 
     <TextView
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/textingresatuapellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="@font/jua_normal"
-        android:text="Ingresa tu apellido"
+        android:text="@string/ingresa_tu_apellido"
         android:textColor="@color/grisAlke"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -112,8 +113,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/jua_normal"
-        android:text="Email"
-        android:textSize="16dp"
+        android:text="@string/email"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -122,7 +123,7 @@
         app:layout_constraintVertical_bias="0.415" />
 
     <ImageView
-        android:id="@+id/imageView4_1"
+        android:id="@+id/rectanglesignup3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,13 +135,13 @@
         app:srcCompat="@drawable/rectangle" />
 
     <TextView
-        android:id="@+id/textView4_1"
+        android:id="@+id/textingresatuemailsignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="@font/jua_normal"
-        android:text="Ingresar email"
-        android:textColor="#A6AFBA"
+        android:text="@string/ingresar_email"
+        android:textColor="@color/grisAlke"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.03"
@@ -149,12 +150,12 @@
         app:layout_constraintVertical_bias="0.461" />
 
     <TextView
-        android:id="@+id/textView3_0"
+        android:id="@+id/textcontraseñasignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/jua_normal"
-        android:text="Contraseña"
-        android:textSize="16dp"
+        android:text="@string/contrase_a"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.004"
@@ -163,7 +164,7 @@
         app:layout_constraintVertical_bias="0.39" />
 
     <ImageView
-        android:id="@+id/imageView3_0"
+        android:id="@+id/rectanglesignup4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -175,12 +176,12 @@
         app:srcCompat="@drawable/rectangle" />
 
     <TextView
-        android:id="@+id/editTextText8"
+        android:id="@+id/textingresatucontrasignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="@font/jua_normal"
-        android:text="Ingresa tu contraseña"
+        android:text="@string/ingresa_tu_contrase_a"
         android:textColor="@color/grisAlke"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -190,12 +191,12 @@
         app:layout_constraintVertical_bias="0.554" />
 
     <TextView
-        android:id="@+id/textView3_1"
+        android:id="@+id/textreingresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/jua_normal"
-        android:text="Reingresar contraseña"
-        android:textSize="16dp"
+        android:text="@string/reingresar_contrase_a"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.0"
@@ -204,7 +205,7 @@
         app:layout_constraintVertical_bias="0.611" />
 
     <ImageView
-        android:id="@+id/imageView3_1"
+        android:id="@+id/rectanglesingup5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -216,11 +217,11 @@
         app:srcCompat="@drawable/rectangle" />
 
     <TextView
-        android:id="@+id/editText9"
+        android:id="@+id/textreingresarcontragris"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/jua_normal"
-        android:text="Reingresar contraseña"
+        android:text="@string/reingresar_contrase_a"
         android:textColor="@color/grisAlke"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -230,60 +231,61 @@
         app:layout_constraintVertical_bias="0.656" />
 
     <Button
-        android:id="@+id/login_buttom2"
+        android:id="@+id/botoncrearcuenta2"
         android:layout_width="314dp"
         android:layout_height="49dp"
+        android:layout_marginTop="89dp"
         android:background="@drawable/boton_redondeadoosc"
         android:fontFamily="@font/jua_normal"
-        android:text="Crear cuenta"
+        android:text="@string/crear_cuenta"
         android:textAllCaps="false"
         android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textyatienesuna"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/rectanglesingup5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textyatienesuna"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_below="@id/rectanglesignup4"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/jua_normal"
+        android:text="@string/ya_tienes_una_cuenta"
+        android:textColor="@color/azulalkeosc"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="21dp"
-        android:layout_below="@id/imageView3"
-        android:fontFamily="@font/jua_normal"
-        android:text="Ya tienes una cuenta??"
-        android:textColor="@color/azulalkeosc"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/login_buttom2"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintTop_toBottomOf="@+id/botoncrearcuenta2" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/icon_ojosignup1"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
         app:endIconMode="password_toggle"
         app:endIconTint="@color/grisAlke"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3_0"
+        app:layout_constraintBottom_toBottomOf="@+id/rectanglesignup4"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/imageView3_0"
+        app:layout_constraintTop_toTopOf="@+id/rectanglesignup4"
         app:layout_constraintVertical_bias="0.545" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/ojosignup3"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
         app:endIconMode="password_toggle"
         app:endIconTint="#A6AFBA"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3_1"
+        app:layout_constraintBottom_toBottomOf="@+id/rectanglesingup5"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/imageView3_1"
+        app:layout_constraintTop_toTopOf="@+id/rectanglesingup5"
         app:layout_constraintVertical_bias="0.661">
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -300,7 +302,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.89" />
+        app:layout_constraintGuide_percent="0.9" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"

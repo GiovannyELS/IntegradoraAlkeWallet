@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash">
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.example.alkewalletapp.fragmentos.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/loginsignup"
+        android:name="com.example.alkewalletapp.fragmentos.Loginsignup"
+        android:label="fragment_loginsignup"
+        tools:layout="@layout/fragment_loginsignup" />
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.alkewalletapp.fragmentos.LoginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" />
+    <fragment
+        android:id="@+id/signupPage"
+        android:name="com.example.alkewalletapp.fragmentos.SignupPage"
+        android:label="fragment_signup_page"
+        tools:layout="@layout/fragment_signup_page" />
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.example.alkewalletapp.fragmentos.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" />
+    <fragment
+        android:id="@+id/homePageEmpty"
+        android:name="com.example.alkewalletapp.fragmentos.HomePageEmpty"
+        android:label="fragment_home_page_empty"
+        tools:layout="@layout/fragment_home_page_empty" />
+    <fragment
+        android:id="@+id/requestMoney"
+        android:name="com.example.alkewalletapp.fragmentos.RequestMoney"
+        android:label="fragment_request_money"
+        tools:layout="@layout/fragment_request_money" />
+    <fragment
+        android:id="@+id/sendMoney"
+        android:name="com.example.alkewalletapp.fragmentos.SendMoney"
+        android:label="fragment_send_money"
+        tools:layout="@layout/fragment_send_money" />
+    <fragment
+        android:id="@+id/profilePage2"
+        android:name="com.example.alkewalletapp.fragmentos.ProfilePage"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" />
+</navigation>

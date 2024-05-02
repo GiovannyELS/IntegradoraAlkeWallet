@@ -4,5 +4,24 @@
     <string name="ultimas_transacciones">Ultimas transacciones</string>
     <string name="ingresar_dinero">Ingresar Dinero</string>
     <string name="enviar_dinero">Enviar Dinero</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="centro_de_ayuda">Centro de ayuda</string>
+    <string name="crear_cuenta_nueva">Crear cuenta nueva</string>
+    <string name="ya_tiene_cuenta">Ya tiene cuenta?</string>
+    <string name="logea_y_empieza_a_transferir">Logea y empieza a transferir!</string>
+    <string name="email">Email</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="ingresa_tu_email">Ingresa tu email</string>
+    <string name="ingresa_tu_contrase_a">Ingresa tu contraseña</string>
+    <string name="olvidaste_tu_contrase_a">Olvidaste tu contraseña?</string>
+    <string name="registrarse_y_empezar_a_tranferir">Registrarse y empezar a tranferir</string>
+    <string name="nombre">Nombre</string>
+    <string name="ingresa_tu_nombre">Ingresa tu nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="ingresa_tu_apellido">Ingresa tu apellido</string>
+    <string name="ingresar_email">Ingresar email</string>
+    <string name="reingresar_contrase_a">Reingresar contraseña</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="ya_tienes_una_cuenta">Ya tienes una cuenta??</string>
 
 </resources>

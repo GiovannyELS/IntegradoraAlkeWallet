@@ -3,7 +3,11 @@
     
     <style name="circular">
         <item name="cornerSize">50%</item>
+    </style>
 
+    <style name="add_payment">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#1A1A1A</item>
     </style>
 
 

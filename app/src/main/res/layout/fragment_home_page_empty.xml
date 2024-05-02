@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.HomePageEmpty">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
@@ -141,11 +142,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonverde1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonverde2"
         app:layout_constraintVertical_bias="0.0" />
 
     <RelativeLayout
-        android:id="@+id/buttonverde1"
+        android:id="@+id/buttonverde2"
         android:layout_width="165dp"
         android:layout_height="49dp"
         android:layout_marginStart="15dp"
@@ -187,7 +188,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/send_button"
+        android:id="@+id/send_button2"
         android:layout_width="165dp"
         android:layout_height="49dp"
         android:layout_marginTop="32dp"
