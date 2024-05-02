@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragmentos.HomePage">
@@ -140,21 +141,23 @@
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonverde1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/botonVerde1"
         app:layout_constraintVertical_bias="0.0" />
 
     <RelativeLayout
-        android:id="@+id/buttonverde1"
+        android:id="@+id/botonVerde1"
         android:layout_width="165dp"
         android:layout_height="49dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/botonverde_alke"
         app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline7">
+
 
         <TextView
             android:id="@+id/textView13"
@@ -169,6 +172,7 @@
             android:text="@string/enviar_dinero"
             android:textAllCaps="false"
             android:textColor="@color/black">
+
         </TextView>
 
         <ImageView
@@ -188,7 +192,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/send_button"
+        android:id="@+id/boton_ingresar1"
         android:layout_width="165dp"
         android:layout_height="49dp"
         android:layout_marginTop="32dp"
@@ -200,16 +204,21 @@
 
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="109dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="47dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="7dp"
             android:fontFamily="@font/jua_normal"
             android:text="@string/ingresar_dinero"
             android:textAllCaps="false"
             android:textColor="@color/white">
+
         </TextView>
 
         <ImageView

@@ -196,7 +196,7 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/buttonverde1"
+        android:id="@+id/buttonAzulIngresar"
         android:layout_width="314dp"
         android:layout_height="49dp"
         android:layout_marginBottom="16dp"

@@ -10,24 +10,22 @@
 
     <TextView
         android:id="@+id/textregistrarseytransferir"
-        android:layout_width="315dp"
-        android:layout_height="104dp"
+        android:layout_width="317dp"
+        android:layout_height="135dp"
         android:fontFamily="@font/jua_normal"
         android:text="@string/registrarse_y_empezar_a_tranferir"
         android:textSize="32sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintVertical_bias="1.0"
-        />
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/textnombresignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:fontFamily="@font/jua_normal"
         android:text="@string/nombre"
         android:textSize="16sp"
@@ -35,8 +33,8 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
 
     <ImageView
         android:id="@+id/rectanglesignup1"
@@ -47,22 +45,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/textnombresignup"
-        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintVertical_bias="0.008"
         app:srcCompat="@drawable/rectangle" />
 
     <TextView
         android:id="@+id/textingresanombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="202dp"
+        android:layout_marginTop="21dp"
         android:fontFamily="@font/jua_normal"
         android:text="@string/ingresa_tu_nombre"
         android:textColor="@color/grisAlke"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/rectanglesignup1"
-        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="@+id/rectanglesignup1"
         app:layout_constraintTop_toBottomOf="@+id/textnombresignup"
         app:layout_constraintVertical_bias="0.0" />
@@ -76,7 +72,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364"
+        app:layout_constraintVertical_bias="0.419"
         app:srcCompat="@drawable/rectangle" />
 
     <TextView
@@ -91,7 +87,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintVertical_bias="0.374" />
 
     <TextView
         android:id="@+id/textingresatuapellido"
@@ -103,10 +99,10 @@
         android:textColor="@color/grisAlke"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.424" />
 
     <TextView
         android:id="@+id/textView6"
@@ -120,7 +116,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.415" />
+        app:layout_constraintVertical_bias="0.473" />
 
     <ImageView
         android:id="@+id/rectanglesignup3"
@@ -128,10 +124,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46"
+        app:layout_constraintVertical_bias="0.52"
         app:srcCompat="@drawable/rectangle" />
 
     <TextView
@@ -144,10 +140,10 @@
         android:textColor="@color/grisAlke"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.461" />
+        app:layout_constraintVertical_bias="0.52" />
 
     <TextView
         android:id="@+id/textcontraseñasignup"
@@ -161,7 +157,7 @@
         app:layout_constraintHorizontal_bias="0.004"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.478" />
 
     <ImageView
         android:id="@+id/rectanglesignup4"
@@ -169,10 +165,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555"
+        app:layout_constraintVertical_bias="0.627"
         app:srcCompat="@drawable/rectangle" />
 
     <TextView
@@ -185,10 +180,10 @@
         android:textColor="@color/grisAlke"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.622" />
 
     <TextView
         android:id="@+id/textreingresa"
@@ -199,10 +194,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.006"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.611" />
+        app:layout_constraintVertical_bias="0.685" />
 
     <ImageView
         android:id="@+id/rectanglesingup5"
@@ -213,7 +208,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663"
+        app:layout_constraintVertical_bias="0.745"
         app:srcCompat="@drawable/rectangle" />
 
     <TextView
@@ -228,13 +223,13 @@
         app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656" />
+        app:layout_constraintVertical_bias="0.734" />
 
     <Button
         android:id="@+id/botoncrearcuenta2"
         android:layout_width="314dp"
         android:layout_height="49dp"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="65dp"
         android:background="@drawable/boton_redondeadoosc"
         android:fontFamily="@font/jua_normal"
         android:text="@string/crear_cuenta"
@@ -245,20 +240,19 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/rectanglesingup5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.120000005" />
 
     <TextView
         android:id="@+id/textyatienesuna"
         android:layout_width="wrap_content"
         android:layout_height="21dp"
         android:layout_below="@id/rectanglesignup4"
-        android:layout_marginBottom="10dp"
         android:fontFamily="@font/jua_normal"
         android:text="@string/ya_tienes_una_cuenta"
         android:textColor="@color/azulalkeosc"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/botoncrearcuenta2" />
 

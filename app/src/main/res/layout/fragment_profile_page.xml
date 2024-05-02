@@ -98,7 +98,8 @@
         android:drawableLeft="@drawable/card_icon"
         android:drawableRight="@drawable/arrow_icon"
         android:paddingRight="20dp"
-        android:paddingLeft="20dp"/>
+        android:paddingLeft="20dp"
+        tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/button2"
