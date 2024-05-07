@@ -24,103 +24,129 @@
         app:layout_constraintVertical_bias="0.07999998"
         app:lineHeight="52sp" />
 
-    <ImageView
-        android:id="@+id/imagerectanglepng"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintStart_toStartOf="@+id/textemail1"
-        app:layout_constraintTop_toBottomOf="@+id/textemail1"
-        app:srcCompat="@drawable/rectangle" />
 
-    <TextView
-        android:id="@+id/textemail1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="98dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/email"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/imagerectanglepng"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toBottomOf="@+id/textlogeayempieza" />
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="108dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlogeayempieza"
+        app:layout_constraintVertical_bias="0.155">
 
-    <TextView
-        android:id="@+id/textingresatuemail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/ingresa_tu_email"
-        android:textColor="#A6AFBA"
-        app:layout_constraintBottom_toBottomOf="@+id/imagerectanglepng"
-        app:layout_constraintEnd_toEndOf="@+id/imagerectanglepng"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="@+id/imagerectanglepng"
-        app:layout_constraintTop_toTopOf="@+id/imagerectanglepng" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/jua_normal"
+            android:text="Email"
+            android:textColor="@color/grisAlkeosc"
+            android:textSize="16sp" />
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="316dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rectangle3"
+            android:textColorHint="@color/grisAlke">
 
-    <ImageView
-        android:id="@+id/imagerectanglepng2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintStart_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toBottomOf="@+id/textcontrasenia1"
-        app:srcCompat="@drawable/rectangle" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="0dp"
+                android:alpha="0.50"
+                android:fontFamily="@font/jua_normal"
+                android:gravity="top"
+                android:hint="Ingresar tu email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/grisAlke"
+                android:textSize="14sp"
+                android:translationY="-1.75sp">
 
 
-    <TextView
-        android:id="@+id/textcontrasenia1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/contrase_a"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/imagerectanglepng2"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toBottomOf="@+id/imagerectanglepng" />
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="363dp"
+        android:layout_height="108dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlogeayempieza"
+        app:layout_constraintVertical_bias="0.338">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/jua_normal"
+            android:text="Contraseña"
+            android:textColor="@color/grisAlkeosc"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rectangle3"
+            android:textColorHint="@color/grisAlke"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/grisAlke">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="0dp"
+                android:alpha="0.50"
+                android:ems="10"
+                android:fontFamily="@font/jua_normal"
+                android:gravity="top"
+                android:hint="Ingresar tu contraseña"
+                android:inputType="textPassword"
+                android:textColor="@color/grisAlke"
+                android:textSize="14sp"
+                android:translationY="-1.75sp">
+
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
 
     <Button
         android:id="@+id/botonlogin"
         android:layout_width="316dp"
         android:layout_height="50dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/boton_redondeado"
         android:fontFamily="@font/jua_normal"
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/textcrearnuevacuenta"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toBottomOf="@+id/imagerectanglepng2" />
-
-    <TextView
-        android:id="@+id/textingresatupasword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/ingresa_tu_contrase_a"
-        android:textColor="#A6AFBA"
-        app:layout_constraintBottom_toBottomOf="@+id/imagerectanglepng2"
-        app:layout_constraintEnd_toEndOf="@+id/imagerectanglepng2"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="@+id/imagerectanglepng2"
-        app:layout_constraintTop_toTopOf="@+id/imagerectanglepng2" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/olvidastetucontra"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
 
@@ -132,29 +158,16 @@
         android:textColor="@color/azulalkeosc"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
         app:layout_constraintTop_toBottomOf="@+id/botonlogin"
-        app:layout_constraintVertical_bias="0.72" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/icon_eye"
-        android:layout_width="45dp"
-        android:layout_height="36dp"
-        app:endIconMode="password_toggle"
-        app:endIconTint="#A6AFBA"
-        app:layout_constraintBottom_toBottomOf="@+id/imagerectanglepng2"
-        app:layout_constraintEnd_toEndOf="@+id/imagerectanglepng2"
-        app:layout_constraintHorizontal_bias="0.948"
-        app:layout_constraintStart_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toTopOf="@+id/imagerectanglepng2">
-
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintVertical_bias="0.328" />
 
     <TextView
         android:id="@+id/olvidastetucontra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="324dp"
         android:fontFamily="@font/jua_normal"
         android:lineHeight="17.5dp"
         android:text="@string/olvidaste_tu_contrase_a"
@@ -162,10 +175,10 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toBottomOf="@+id/imagerectanglepng2"
-        app:layout_constraintVertical_bias="0.039" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
@@ -186,7 +199,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.95076585" />
+        app:layout_constraintGuide_percent="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
