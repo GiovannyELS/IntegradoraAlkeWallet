@@ -1,68 +1,40 @@
-package com.example.alkewalletapp.fragmentos;
+package com.example.alkewalletapp.fragmentos
 
-import android.os.Bundle;
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation.findNavController
+import com.example.alkewalletapp.R
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
-
-import com.example.alkewalletapp.R;
-
-public class Loginsignup extends Fragment {
-
-    public Loginsignup() {
-        // Required empty public constructor
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-
+class Loginsignup : Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        if (arguments != null) {
         }
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_loginsignup, container, false);
+        return inflater.inflate(R.layout.fragment_loginsignup, container, false)
     }
 
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        Button botoncrearcuenta = view.findViewById(R.id.botoncrearcuenta);
-        TextView yatienescuenta = view.findViewById(R.id.tienescuentatext);
-
-
-        botoncrearcuenta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.action_loginsignup_to_signupPage);
-
-            }
-        });
-
-        yatienescuenta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.action_loginsignup_to_loginPage);
-            }
-        });
+        val botoncrearcuenta = view.findViewById<Button>(R.id.botoncrearcuenta)
+        val yatienescuenta = view.findViewById<TextView>(R.id.tienescuentatext)
 
 
+        botoncrearcuenta.setOnClickListener { v -> findNavController(v).navigate(R.id.action_loginsignup_to_signupPage) }
 
-
-
+        yatienescuenta.setOnClickListener { v -> findNavController(v).navigate(R.id.action_loginsignup_to_loginPage) }
     }
 }
