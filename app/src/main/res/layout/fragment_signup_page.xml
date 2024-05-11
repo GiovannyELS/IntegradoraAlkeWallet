@@ -1,324 +1,379 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/flechaverde"
+    android:elevation="4dp"
     tools:context=".fragmentos.SignupPage">
-
 
     <TextView
         android:id="@+id/textregistrarseytransferir"
-        android:layout_width="317dp"
-        android:layout_height="135dp"
+        android:layout_width="315dp"
+        android:layout_height="104dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:lineSpacingExtra="12sp"
+        android:translationY="-6sp"
+        android:gravity="top"
         android:fontFamily="@font/jua_normal"
         android:text="@string/registrarse_y_empezar_a_tranferir"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintVertical_bias="0.15" />
+        />
 
-    <TextView
-        android:id="@+id/textnombresignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/nombre"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278" />
+    <!--Primer box -->
+    <RelativeLayout
+        android:id="@+id/nombreRelative"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/textregistrarseytransferir"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="46dp"
+        android:clipToOutline="true">
 
-    <ImageView
-        android:id="@+id/rectanglesignup1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textnombresignup"
-        app:layout_constraintVertical_bias="0.008"
-        app:srcCompat="@drawable/rectangle" />
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="31dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/jua_normal"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/nombre"
+            android:textAppearance="@style/email"
+            android:translationY="-1.75sp" />
 
-    <TextView
-        android:id="@+id/textingresanombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/ingresa_tu_nombre"
-        android:textColor="@color/grisAlke"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.033"
-        app:layout_constraintStart_toStartOf="@+id/rectanglesignup1"
-        app:layout_constraintTop_toBottomOf="@+id/textnombresignup"
-        app:layout_constraintVertical_bias="0.0" />
+        <View
+            android:id="@+id/rectangle1"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/rectangle1" />
 
-    <ImageView
-        android:id="@+id/rectanglesignup2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.419"
-        app:srcCompat="@drawable/rectangle" />
+        <TextView
+            android:id="@+id/enter_your_name"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_alignBottom="@+id/rectangle1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.25"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/enter_your_"
+            android:textAppearance="@style/enter_your_"
+            android:translationY="-1.75sp" />
+    </RelativeLayout>
+    <!--Segundo box -->
+    <RelativeLayout
+        android:id="@+id/apellidoRelative"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/nombreRelative"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:clipToOutline="true">
 
-    <TextView
-        android:id="@+id/textapellido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/apellido"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374" />
+        <TextView
+            android:id="@+id/apellido"
+            android:layout_width="31dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/jua_normal"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/apellido"
+            android:textAppearance="@style/email"
+            android:translationY="-1.75sp" />
 
-    <TextView
-        android:id="@+id/textingresatuapellido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/ingresa_tu_apellido"
-        android:textColor="@color/grisAlke"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
+        <View
+            android:id="@+id/rectangle2"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/rectangle1" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/email"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473" />
+        <TextView
+            android:id="@+id/enter_your_apellido"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_alignBottom="@+id/rectangle2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.25"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/ingresa_tu_apellido"
+            android:textAppearance="@style/enter_your_"
+            android:translationY="-1.75sp" />
+    </RelativeLayout>
+    <!--tercer box -->
+    <RelativeLayout
+        android:id="@+id/emailRelative"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/apellidoRelative"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:clipToOutline="true">
 
-    <ImageView
-        android:id="@+id/rectanglesignup3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52"
-        app:srcCompat="@drawable/rectangle" />
 
-    <TextView
-        android:id="@+id/textingresatuemailsignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/ingresar_email"
-        android:textColor="@color/grisAlke"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="31dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/jua_normal"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/email"
+            android:textAppearance="@style/email"
+            android:translationY="-1.75sp" />
 
-    <TextView
-        android:id="@+id/textcontraseñasignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/contrase_a"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.004"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="0.478" />
+        <View
+            android:id="@+id/rectangle3"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/rectangle1" />
 
-    <ImageView
-        android:id="@+id/rectanglesignup4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627"
-        app:srcCompat="@drawable/rectangle" />
+        <TextView
+            android:id="@+id/enter_your_"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_alignBottom="@+id/rectangle3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.25"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/ingresa_tu_email"
+            android:textAppearance="@style/enter_your_"
+            android:translationY="-1.75sp" />
+    </RelativeLayout>
+    <!--cuarto box-->
+    <RelativeLayout
+        android:id="@+id/contraseniaRelative"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/emailRelative"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:clipToOutline="true">
 
-    <TextView
-        android:id="@+id/textingresatucontrasignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/ingresa_tu_contrase_a"
-        android:textColor="@color/grisAlke"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.622" />
 
-    <TextView
-        android:id="@+id/textreingresa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/reingresar_contrase_a"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.006"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685" />
+        <TextView
+            android:id="@+id/contrasenia"
+            android:layout_width="31dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/jua_normal"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/contrase_a"
+            android:textAppearance="@style/email"
+            android:translationY="-1.75sp" />
 
-    <ImageView
-        android:id="@+id/rectanglesingup5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745"
-        app:srcCompat="@drawable/rectangle" />
+        <View
+            android:id="@+id/rectangle4"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/rectangle1" />
 
-    <TextView
-        android:id="@+id/textreingresarcontragris"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jua_normal"
-        android:text="@string/reingresar_contrase_a"
-        android:textColor="@color/grisAlke"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.034"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.734" />
+        <TextView
+            android:id="@+id/enter_your_contrasenia"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_alignBottom="@+id/rectangle4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.25"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/ingresa_tu_contrase_a"
+            android:textAppearance="@style/enter_your_"
+            android:translationY="-1.75sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/icon_ojosignup1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/enter_your_contrasenia"
+            android:layout_alignTop="@+id/enter_your_contrasenia"
+            android:layout_alignBottom="@+id/enter_your_contrasenia"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="-16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="-10dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/grisAlke" />
+
+
+    </RelativeLayout>
+    <!--quinto box-->
+    <RelativeLayout
+        android:id="@+id/reingreseRelative"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/contraseniaRelative"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:clipToOutline="true">
+
+
+        <TextView
+            android:id="@+id/reingrese"
+            android:layout_width="31dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/jua_normal"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/reingresar_contrase_a"
+            android:textAppearance="@style/email"
+            android:translationY="-1.75sp" />
+
+        <View
+            android:id="@+id/rectangle5"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/rectangle1" />
+
+        <TextView
+            android:id="@+id/reingresecontrasenia"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_alignBottom="@+id/rectangle5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.25"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/reingresar_contrase_a"
+            android:textAppearance="@style/enter_your_"
+            android:translationY="-1.75sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/icon_ojosignup2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/reingresecontrasenia"
+            android:layout_alignTop="@+id/reingresecontrasenia"
+            android:layout_alignBottom="@+id/reingresecontrasenia"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="-16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="-10dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/grisAlke" />
+
+    </RelativeLayout>
+
 
     <Button
         android:id="@+id/botoncrearcuenta2"
         android:layout_width="314dp"
         android:layout_height="49dp"
-        android:layout_marginTop="65dp"
+        android:layout_below="@+id/reingreseRelative"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="65dp"
         android:background="@drawable/boton_redondeadoosc"
         android:fontFamily="@font/jua_normal"
         android:text="@string/crear_cuenta"
         android:textAllCaps="false"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/textyatienesuna"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/rectanglesingup5"
-        app:layout_constraintVertical_bias="0.120000005" />
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/textyatienesuna"
         android:layout_width="wrap_content"
         android:layout_height="21dp"
-        android:layout_below="@id/rectanglesignup4"
+        android:layout_below="@+id/botoncrearcuenta2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="148dp"
         android:fontFamily="@font/jua_normal"
         android:text="@string/ya_tienes_una_cuenta"
-        android:textColor="@color/azulalkeosc"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/botoncrearcuenta2" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/icon_ojosignup1"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        app:endIconMode="password_toggle"
-        app:endIconTint="@color/grisAlke"
-        app:layout_constraintBottom_toBottomOf="@+id/rectanglesignup4"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.98"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/rectanglesignup4"
-        app:layout_constraintVertical_bias="0.545" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ojosignup3"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        app:endIconMode="password_toggle"
-        app:endIconTint="#A6AFBA"
-        app:layout_constraintBottom_toBottomOf="@+id/rectanglesingup5"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.98"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/rectanglesingup5"
-        app:layout_constraintVertical_bias="0.661">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.13" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="201dp" />
+        android:textColor="@color/azulalkeosc" />
 
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="898dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.95076585" />
+</RelativeLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

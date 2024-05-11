@@ -61,6 +61,7 @@
                 android:alpha="0.50"
                 android:fontFamily="@font/jua_normal"
                 android:gravity="top"
+                android:ems="10"
                 android:hint="Ingresar tu email"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/grisAlke"
