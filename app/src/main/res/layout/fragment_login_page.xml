@@ -78,7 +78,8 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:fontFamily="@font/jua_normal"
-            android:maxLength="42" />
+            android:maxLength="42"
+            android:alpha="0.50"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -106,7 +107,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/jua_normal"
             android:inputType="textPassword"
-            android:maxLength="22" />
+            android:maxLength="22"
+            android:alpha="0.50"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 
