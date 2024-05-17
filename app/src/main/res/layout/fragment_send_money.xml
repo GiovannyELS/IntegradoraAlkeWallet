@@ -125,7 +125,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/add_payment"
                 android:layout_width="321dp"
-                android:layout_height="wrap_content"
+                android:layout_height="56dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="0dp"
                 android:alpha="0.25"
