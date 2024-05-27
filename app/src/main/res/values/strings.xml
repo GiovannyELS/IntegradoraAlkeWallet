@@ -25,5 +25,6 @@
     <string name="ya_tienes_una_cuenta">Ya tienes una cuenta??</string>
     <string name="enter_your_">Ingresar nombre</string>
     <string name="ingresar_tu_email">Ingresar tu email</string>
+    <string name="login">Login</string>
 
 </resources>

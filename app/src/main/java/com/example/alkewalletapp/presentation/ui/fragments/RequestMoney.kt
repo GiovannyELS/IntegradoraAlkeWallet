@@ -1,4 +1,4 @@
-package com.example.alkewalletapp.fragmentos
+package com.example.alkewalletapp.presentation.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,11 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation.findNavController
 import com.example.alkewalletapp.R
+import com.example.alkewalletapp.databinding.FragmentRequestMoneyBinding
 
 class RequestMoney : Fragment() {
+
+    private lateinit var binding: FragmentRequestMoneyBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (arguments != null) {
@@ -20,20 +23,22 @@ class RequestMoney : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_request_money, container, false)
+        binding = FragmentRequestMoneyBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-        val botonback = view.findViewById<ImageView>(R.id.boton_back)
-        val botonhome = view.findViewById<View>(R.id.buttonAzulIngresar)
+        val navController = findNavController(view)
 
 
-        botonback.setOnClickListener { v -> findNavController(v).navigate(R.id.action_requestMoney_to_homePage) }
+        val botonback = binding.include2.botonBack
+        val botonhome = binding.buttonAzulIngresar
 
-        botonhome.setOnClickListener { v -> findNavController(v).navigate(R.id.action_requestMoney_to_loginsignup) }
+
+        botonback.setOnClickListener { navController.navigate(R.id.action_requestMoney_to_homePage) }
+
+        botonhome.setOnClickListener { navController.navigate(R.id.action_requestMoney_to_loginsignup) }
     }
 }

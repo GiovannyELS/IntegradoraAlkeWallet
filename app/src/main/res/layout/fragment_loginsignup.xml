@@ -7,7 +7,7 @@
     android:id="@+id/loginsignup"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentos.Loginsignup"
+    tools:context=".presentation.ui.fragments.Loginsignup"
     >
 
 

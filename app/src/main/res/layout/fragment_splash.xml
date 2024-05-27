@@ -6,7 +6,7 @@ android:id="@+id/main"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@color/azulalke"
-tools:context=".fragmentos.Splash">
+tools:context=".presentation.ui.fragments.Splash">
 
 <ImageView
     android:id="@+id/logo"
@@ -15,5 +15,10 @@ tools:context=".fragmentos.Splash">
     android:layout_centerInParent="true"
     android:background="@drawable/logo" />
 
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="71dp" />
 
 </RelativeLayout>

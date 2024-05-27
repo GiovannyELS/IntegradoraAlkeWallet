@@ -6,16 +6,18 @@
     app:startDestination="@id/splash">
     <fragment
         android:id="@+id/splash"
-        android:name="com.example.alkewalletapp.fragmentos.Splash"
+        android:name="com.example.alkewalletapp.presentation.ui.fragments.Splash"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splash_to_loginsignup"
-            app:destination="@id/loginsignup" />
+            app:destination="@id/loginsignup"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/loginsignup"
-        android:name="com.example.alkewalletapp.fragmentos.Loginsignup"
+        android:name="com.example.alkewalletapp.presentation.ui.fragments.Loginsignup"
         android:label="fragment_loginsignup"
         tools:layout="@layout/fragment_loginsignup" >
         <action
@@ -27,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/signupPage"
-        android:name="com.example.alkewalletapp.fragmentos.SignupPage"
+        android:name="com.example.alkewalletapp.presentation.ui.fragments.SignupPage"
         android:label="fragment_signup_page"
         tools:layout="@layout/fragment_signup_page" >
         <action
@@ -41,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/homePage"
-        android:name="com.example.alkewalletapp.fragmentos.HomePage"
+        android:name="com.example.alkewalletapp.presentation.ui.fragments.HomePage"
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page" >
         <action
@@ -53,12 +55,12 @@
     </fragment>
     <fragment
         android:id="@+id/homePageEmpty"
-        android:name="com.example.alkewalletapp.fragmentos.HomePageEmpty"
+        android:name="com.example.alkewalletapp.presentation.ui.fragments.HomePageEmpty"
         android:label="fragment_home_page_empty"
         tools:layout="@layout/fragment_home_page_empty" />
     <fragment
         android:id="@+id/requestMoney"
-        android:name="com.example.alkewalletapp.fragmentos.RequestMoney"
+        android:name="com.example.alkewalletapp.presentation.ui.fragments.RequestMoney"
         android:label="fragment_request_money"
         tools:layout="@layout/fragment_request_money" >
         <action
@@ -70,7 +72,7 @@
     </fragment>
     <fragment
         android:id="@+id/sendMoney"
-        android:name="com.example.alkewalletapp.fragmentos.SendMoney"
+        android:name="com.example.alkewalletapp.presentation.ui.fragments.SendMoney"
         android:label="fragment_send_money"
         tools:layout="@layout/fragment_send_money" >
         <action
@@ -82,12 +84,12 @@
     </fragment>
     <fragment
         android:id="@+id/profilePage2"
-        android:name="com.example.alkewalletapp.fragmentos.ProfilePage"
+        android:name="com.example.alkewalletapp.presentation.ui.fragments.ProfilePage"
         android:label="fragment_profile_page"
         tools:layout="@layout/fragment_profile_page" />
     <fragment
         android:id="@+id/loginPage"
-        android:name="com.example.alkewalletapp.fragmentos.LoginPage"
+        android:name="com.example.alkewalletapp.presentation.ui.fragments.LoginPage"
         android:label="fragment_login_page"
         tools:layout="@layout/fragment_login_page" >
         <action

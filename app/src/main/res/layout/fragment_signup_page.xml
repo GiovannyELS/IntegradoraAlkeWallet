@@ -6,348 +6,266 @@
     android:layout_height="match_parent"
     android:background="@drawable/flechaverde"
     android:elevation="4dp"
-    tools:context=".fragmentos.SignupPage">
+    tools:context=".presentation.ui.fragments.SignupPage">
 
     <TextView
         android:id="@+id/textregistrarseytransferir"
-        android:layout_width="315dp"
+        android:layout_width="316dp"
         android:layout_height="104dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="30dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginLeft="42dp"
         android:layout_marginTop="80dp"
-        android:lineSpacingExtra="12sp"
-        android:translationY="-6sp"
-        android:gravity="top"
         android:fontFamily="@font/jua_normal"
+        android:gravity="top"
+        android:lineSpacingExtra="12sp"
         android:text="@string/registrarse_y_empezar_a_tranferir"
         android:textSize="32sp"
-        />
+        android:translationY="-6sp" />
 
-    <!--Primer box -->
-    <RelativeLayout
-        android:id="@+id/nombreRelative"
-        android:layout_width="315dp"
-        android:layout_height="78dp"
-        android:layout_below="@+id/textregistrarseytransferir"
+    <TextView
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="46dp"
-        android:clipToOutline="true">
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="667dp"
+        android:fontFamily="@font/jua_normal"
+        android:text="@string/nombre"
+        android:textColor="@color/grisAlkeosc"
+        android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/nombre"
-            android:layout_width="31dp"
-            android:layout_height="21dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:fontFamily="@font/jua_normal"
-            android:gravity="top"
-            android:lineSpacingExtra="4sp"
-            android:text="@string/nombre"
-            android:textAppearance="@style/email"
-            android:translationY="-1.75sp" />
 
-        <View
-            android:id="@+id/rectangle1"
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="-1dp"
-            android:layout_marginBottom="1dp"
-            android:background="@drawable/rectangle1" />
-
-        <TextView
-            android:id="@+id/enter_your_name"
-            android:layout_width="0dp"
-            android:layout_height="21dp"
-            android:layout_alignBottom="@+id/rectangle1"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="16dp"
-            android:alpha="0.25"
-            android:gravity="top"
-            android:lineSpacingExtra="4sp"
-            android:text="@string/enter_your_"
-            android:textAppearance="@style/enter_your_"
-            android:translationY="-1.75sp" />
-    </RelativeLayout>
-    <!--Segundo box -->
-    <RelativeLayout
-        android:id="@+id/apellidoRelative"
-        android:layout_width="315dp"
-        android:layout_height="78dp"
-        android:layout_below="@+id/nombreRelative"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutname"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="5dp"
-        android:clipToOutline="true">
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="599dp"
+        android:background="@color/white"
+        android:hint="@string/ingresa_tu_nombre"
+        android:textColorHint="@color/grisAlke"
+        app:endIconMode="clear_text">
 
-        <TextView
-            android:id="@+id/apellido"
-            android:layout_width="31dp"
-            android:layout_height="21dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:fontFamily="@font/jua_normal"
-            android:gravity="top"
-            android:lineSpacingExtra="4sp"
-            android:text="@string/apellido"
-            android:textAppearance="@style/email"
-            android:translationY="-1.75sp" />
-
-        <View
-            android:id="@+id/rectangle2"
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="-1dp"
-            android:layout_marginBottom="1dp"
-            android:background="@drawable/rectangle1" />
-
-        <TextView
-            android:id="@+id/enter_your_apellido"
-            android:layout_width="0dp"
-            android:layout_height="21dp"
-            android:layout_alignBottom="@+id/rectangle2"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="16dp"
-            android:alpha="0.25"
-            android:gravity="top"
-            android:lineSpacingExtra="4sp"
-            android:text="@string/ingresa_tu_apellido"
-            android:textAppearance="@style/enter_your_"
-            android:translationY="-1.75sp" />
-    </RelativeLayout>
-    <!--tercer box -->
-    <RelativeLayout
-        android:id="@+id/emailRelative"
-        android:layout_width="315dp"
-        android:layout_height="78dp"
-        android:layout_below="@+id/apellidoRelative"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="5dp"
-        android:clipToOutline="true">
-
-
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="31dp"
-            android:layout_height="21dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:fontFamily="@font/jua_normal"
-            android:gravity="top"
-            android:lineSpacingExtra="4sp"
-            android:text="@string/email"
-            android:textAppearance="@style/email"
-            android:translationY="-1.75sp" />
-
-        <View
-            android:id="@+id/rectangle3"
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="-1dp"
-            android:layout_marginBottom="1dp"
-            android:background="@drawable/rectangle1" />
-
-        <TextView
-            android:id="@+id/enter_your_"
-            android:layout_width="0dp"
-            android:layout_height="21dp"
-            android:layout_alignBottom="@+id/rectangle3"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="16dp"
-            android:alpha="0.25"
-            android:gravity="top"
-            android:lineSpacingExtra="4sp"
-            android:text="@string/ingresa_tu_email"
-            android:textAppearance="@style/enter_your_"
-            android:translationY="-1.75sp" />
-    </RelativeLayout>
-    <!--cuarto box-->
-    <RelativeLayout
-        android:id="@+id/contraseniaRelative"
-        android:layout_width="315dp"
-        android:layout_height="78dp"
-        android:layout_below="@+id/emailRelative"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="5dp"
-        android:clipToOutline="true">
-
-
-        <TextView
-            android:id="@+id/contrasenia"
-            android:layout_width="31dp"
-            android:layout_height="21dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:fontFamily="@font/jua_normal"
-            android:gravity="top"
-            android:lineSpacingExtra="4sp"
-            android:text="@string/contrase_a"
-            android:textAppearance="@style/email"
-            android:translationY="-1.75sp" />
-
-        <View
-            android:id="@+id/rectangle4"
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="-1dp"
-            android:layout_marginBottom="1dp"
-            android:background="@drawable/rectangle1" />
-
-        <TextView
-            android:id="@+id/enter_your_contrasenia"
-            android:layout_width="0dp"
-            android:layout_height="21dp"
-            android:layout_alignBottom="@+id/rectangle4"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="16dp"
-            android:alpha="0.25"
-            android:gravity="top"
-            android:lineSpacingExtra="4sp"
-            android:text="@string/ingresa_tu_contrase_a"
-            android:textAppearance="@style/enter_your_"
-            android:translationY="-1.75sp" />
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/icon_ojosignup1"
-            android:layout_width="40dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextname"
+            android:layout_width="316dp"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/enter_your_contrasenia"
-            android:layout_alignTop="@+id/enter_your_contrasenia"
-            android:layout_alignBottom="@+id/enter_your_contrasenia"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="250dp"
-            android:layout_marginTop="-16dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="-10dp"
-            app:endIconMode="password_toggle"
-            app:endIconTint="@color/grisAlke" />
-
-
-    </RelativeLayout>
-    <!--quinto box-->
-    <RelativeLayout
-        android:id="@+id/reingreseRelative"
-        android:layout_width="315dp"
-        android:layout_height="78dp"
-        android:layout_below="@+id/contraseniaRelative"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="5dp"
-        android:clipToOutline="true">
-
-
-        <TextView
-            android:id="@+id/reingrese"
-            android:layout_width="31dp"
-            android:layout_height="21dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
+            android:alpha="0.50"
             android:fontFamily="@font/jua_normal"
-            android:gravity="top"
-            android:lineSpacingExtra="4sp"
-            android:text="@string/reingresar_contrase_a"
-            android:textAppearance="@style/email"
-            android:translationY="-1.75sp" />
+            android:inputType="textEmailAddress"
+            android:maxLength="42"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        <View
-            android:id="@+id/rectangle5"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="299dp"
+        android:layout_marginEnd="308dp"
+        android:layout_marginBottom="574dp"
+        android:fontFamily="@font/jua_normal"
+        android:text="@string/apellido"
+        android:textColor="@color/grisAlkeosc"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="386dp"
+        android:layout_marginEnd="335dp"
+        android:layout_marginBottom="487dp"
+        android:fontFamily="@font/jua_normal"
+        android:text="@string/email"
+        android:textColor="@color/grisAlkeosc"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutmail"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="323dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="414dp"
+        android:background="@color/white"
+        android:hint="@string/ingresa_tu_email"
+        android:textColorHint="@color/grisAlke"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextmail"
             android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="-1dp"
-            android:layout_marginBottom="1dp"
-            android:background="@drawable/rectangle1" />
-
-        <TextView
-            android:id="@+id/reingresecontrasenia"
-            android:layout_width="0dp"
-            android:layout_height="21dp"
-            android:layout_alignBottom="@+id/rectangle5"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="16dp"
-            android:alpha="0.25"
-            android:gravity="top"
-            android:lineSpacingExtra="4sp"
-            android:text="@string/reingresar_contrase_a"
-            android:textAppearance="@style/enter_your_"
-            android:translationY="-1.75sp" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/icon_ojosignup2"
-            android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/reingresecontrasenia"
-            android:layout_alignTop="@+id/reingresecontrasenia"
-            android:layout_alignBottom="@+id/reingresecontrasenia"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="250dp"
-            android:layout_marginTop="-16dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="-10dp"
-            app:endIconMode="password_toggle"
-            app:endIconTint="@color/grisAlke" />
+            android:alpha="0.50"
+            android:fontFamily="@font/jua_normal"
+            android:inputType="textEmailAddress"
+            android:maxLength="42"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    </RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutApellido"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="322dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="514dp"
+        android:background="@color/white"
+        android:hint="@string/ingresa_tu_apellido"
+        android:textColorHint="@color/grisAlke"
+        app:endIconMode="clear_text">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.50"
+            android:fontFamily="@font/jua_normal"
+            android:inputType="textEmailAddress"
+            android:maxLength="42"
+
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="486dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="386dp"
+        android:fontFamily="@font/jua_normal"
+        android:text="@string/contrase_a"
+        android:textColor="@color/grisAlkeosc"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutContra"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="508dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="322dp"
+        android:background="@color/white"
+        android:hint="@string/ingresa_tu_contrase_a"
+        android:textColorHint="@color/grisAlke"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/grisAlke">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextContra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.50"
+            android:fontFamily="@font/jua_normal"
+            android:inputType="textPassword"
+            android:maxLength="22"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="297dp"
+        android:fontFamily="@font/jua_normal"
+        android:text="@string/reingresar_contrase_a"
+        android:textColor="@color/grisAlkeosc"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutReingreContra"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="605dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="221dp"
+        android:background="@color/white"
+        android:hint="@string/reingresar_contrase_a"
+        android:textColorHint="@color/grisAlke"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/grisAlke">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.50"
+            android:fontFamily="@font/jua_normal"
+            android:inputType="textPassword"
+            android:maxLength="22"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/botoncrearcuenta2"
         android:layout_width="314dp"
         android:layout_height="49dp"
-        android:layout_below="@+id/reingreseRelative"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="65dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="755dp"
+        android:layout_marginEnd="51dp"
         android:background="@drawable/boton_redondeadoosc"
         android:fontFamily="@font/jua_normal"
         android:text="@string/crear_cuenta"
@@ -356,23 +274,19 @@
 
     <TextView
         android:id="@+id/textyatienesuna"
-        android:layout_width="wrap_content"
+        android:layout_width="151dp"
         android:layout_height="21dp"
         android:layout_below="@+id/botoncrearcuenta2"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="148dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="135dp"
         android:fontFamily="@font/jua_normal"
         android:text="@string/ya_tienes_una_cuenta"
         android:textColor="@color/azulalkeosc" />
 
-
 </RelativeLayout>
-
-
-
 
 
 
