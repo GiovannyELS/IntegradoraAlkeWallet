@@ -42,3 +42,6 @@ class Splash : Fragment() {
         }, SPLASH_TIME_OUT)
     }
 }
+
+
+

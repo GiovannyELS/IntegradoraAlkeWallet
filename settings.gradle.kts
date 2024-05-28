@@ -21,4 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "alkewalletapp"
 include(":app")
+
+
+
+
  

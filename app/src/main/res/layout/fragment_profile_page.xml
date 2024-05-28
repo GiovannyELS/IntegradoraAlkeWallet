@@ -16,10 +16,10 @@
             android:id="@+id/textView_1"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:textSize="20dp"
-            android:lineHeight="30px"
+            android:textSize="20sp"
+            android:lineHeight="30dp"
             android:fontFamily="@font/jua_normal"
-            android:text="Mi perfil"
+            android:text="@string/mi_perfil"
             android:textColor="@color/black"
             android:gravity="center"
             android:layout_marginTop="50dp"/>
@@ -68,10 +68,10 @@
         android:layout_marginTop="-40dp"
         android:background="@drawable/botongris_alke"
         android:fontFamily="@font/jua_normal"
-        android:text="Mi informacion"
+        android:text="@string/mi_informacion"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:textAlignment="textStart"
         android:lineHeight="21dp"
         android:layout_gravity="center"
@@ -118,7 +118,8 @@
         android:drawableLeft="@drawable/settings_icon"
         android:drawableRight="@drawable/arrow_icon"
         android:paddingRight="20dp"
-        android:paddingLeft="20dp"/>
+        android:paddingLeft="20dp"
+        tools:ignore="RtlCompat" />
 
     <Button
         android:id="@+id/button3"
@@ -137,6 +138,9 @@
         android:drawableLeft="@drawable/help_icon"
         android:drawableRight="@drawable/arrow_icon"
         android:paddingRight="20dp"
-        android:paddingLeft="20dp"/>
+        android:paddingLeft="20dp"
+        tools:ignore="RtlCompat" />
+    
+    
 
 </FrameLayout>

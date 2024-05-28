@@ -32,3 +32,6 @@ class ProfilePage : Fragment() {
         val navController = Navigation.findNavController(view)
     }
 }
+
+
+

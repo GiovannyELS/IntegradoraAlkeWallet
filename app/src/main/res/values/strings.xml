@@ -26,5 +26,8 @@
     <string name="enter_your_">Ingresar nombre</string>
     <string name="ingresar_tu_email">Ingresar tu email</string>
     <string name="login">Login</string>
+    <string name="mi_informacion">Mi informacion</string>
+    <string name="mi_perfil">Mi perfil</string>
+
 
 </resources>

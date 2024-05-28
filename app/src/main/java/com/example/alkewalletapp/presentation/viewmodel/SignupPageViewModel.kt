@@ -9,7 +9,8 @@ import androidx.navigation.NavController
 import com.example.alkewalletapp.R
 
 class SignupPageViewModel(application: Application) : AndroidViewModel(application) {
-    private val sharedPreferences: SharedPreferences = application.getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
+    private val sharedPreferences: SharedPreferences =
+        application.getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
     val toastMessage = MutableLiveData<String>()
 
     fun registerUser(
@@ -60,6 +61,4 @@ class SignupPageViewModel(application: Application) : AndroidViewModel(applicati
     private fun validatePassword(password: String): Boolean {
         return password.length >= 8
     }
-
-
 }
