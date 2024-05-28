@@ -30,8 +30,6 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
 6. **Documentación:**
    - Proporcionar una documentación detallada de la arquitectura
 
-> [!NOTE]
-> mlmkdg
 
   
 ## Características Principales 📊
@@ -39,6 +37,8 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
 ➡️ _Creación de Usuarios:_ Se registra y verifica usuarios de manera segura. 
 
 ➡️ _Loggin de Usuario:_ Permite loggear al usuario creado en el Signup page.
+
+
 
 ➡️ _Validación:_ Se validan datos de registro con el Shared Preferences y la respectiva lógica. 
 
