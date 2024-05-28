@@ -30,6 +30,8 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
 6. **Documentación:**
    - Proporcionar una documentación detallada de la arquitectura
 
+> [!Note]
+
   
 ## Características Principales 📊
 
