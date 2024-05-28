@@ -29,26 +29,26 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
 
 6. **Documentación:**
    - Proporcionar una documentación detallada de la arquitectura
-  
 
+  
 ## Características Principales
 
- * _Creación de Usuarios:_ Se registra y verifica usuarios de manera segura. 
+➡️ _Creación de Usuarios:_ Se registra y verifica usuarios de manera segura. 
 
-* _Loggin de Usuario:_ Permite loggear al usuario creado en el Signup page.
+➡️ _Loggin de Usuario:_ Permite loggear al usuario creado en el Signup page.
 
-* _Validación:_ Se validan datos de registro con el Shared Preferences y la respectiva lógica. 
+➡️ _Validación:_ Se validan datos de registro con el Shared Preferences y la respectiva lógica. 
 
-* Saldo Inicial: Se puede visualiza tu saldo actual (seteado en duro).
+➡️ _Saldo Inicial:_ Se puede visualiza tu saldo actual (seteado en duro).
 
-* Nombre de Usuario creado: Se puede apreciar la tarjeta inicial del home el nombre de la persona loggeada, la imagen no cambia ya que deberia
+➡️ _Nombre de Usuario creado:_ Se puede apreciar la tarjeta inicial del home el nombre de la persona loggeada, la imagen no cambia ya que deberia
   existir una pantalla en el signup para tomar o subir la foto desde la creacion de usuario. se tomará en cuenta para proximas entregas. 
+ 
+➡️ _Transacciones realizadas:_ Se mantiene una lista de transacciones de muestra creada. En las cuales se ingresa por lista los datos requeridos en el recycler.
 
-* Transacciones realizadas: Se mantiene una lista de transacciones de muestra creada. En las cuales se ingresa por lista los datos requeridos en el recycler.
+➡️ _Navegación fluida:_ Se realiza navegación por los comados asignados a los botones.
 
-* Navegación fluida: Se realiza navegación por los comados asignados a los botones.
-
-* Uso del ViewBinding: Se utiliza el Binding para las actualizaciones automáticas de las vistas. 
+➡️ _Uso del ViewBinding:_ Se utiliza el Binding para las actualizaciones automáticas de las vistas. 
 
 ### Screenshots
 
