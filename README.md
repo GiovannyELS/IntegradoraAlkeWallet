@@ -57,6 +57,9 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
 
 A continuación, se muestran algunos Screenshots de la aplicación:
 
+> [!IMPORTANT]
+> Para realizar el correcto loggeo en la aplicación se debera crear en primer lugar el usuario.
+
 ![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20170128.png)
 
 
