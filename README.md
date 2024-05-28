@@ -69,3 +69,12 @@ A continuación, se muestran algunos Screenshots de la aplicación:
 
 ![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20170939.png)
 
+> [!NOTE]
+> ➡️ _Validación:_ Se validan datos de registro con el Shared Preferences y la respectiva lógica.
+
+![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20171305.png)
+
+> [!NOTE]
+> ➡️ _Uso del ViewBinding:_ Se utiliza el Binding para las actualizaciones automáticas de las vistas.
+
+![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20171043.png)
