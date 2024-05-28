@@ -55,4 +55,8 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
 
 ### Screenshots 📘
 
-A continuación, se muestran algunos pantallazos de la aplicación:
+A continuación, se muestran algunos Screenshots de la aplicación:
+
+![](Captura de pantalla 2024-05-28 170128.png)
+
+
