@@ -57,6 +57,6 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
 
 A continuación, se muestran algunos Screenshots de la aplicación:
 
-![](Captura de pantalla 2024-05-28 170128.png)
+![]([Captura de pantalla 2024-05-28 170128.png](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20170128.png))
 
 
