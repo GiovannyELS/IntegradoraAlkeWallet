@@ -38,7 +38,7 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
 
 ➡️ _Loggin de Usuario:_ Permite loggear al usuario creado en el Signup page.
 
-
+➡️ _Arquitectura:_ Se utiliza la arquitectura MVVM.
 
 ➡️ _Validación:_ Se validan datos de registro con el Shared Preferences y la respectiva lógica. 
 
@@ -62,4 +62,10 @@ A continuación, se muestran algunos Screenshots de la aplicación:
 
 ![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20170128.png)
 
+![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20170256.png)
+
+> [!NOTE]
+> ➡️ Se utiliza la arquitectura MVVM.
+
+![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20170939.png)
 
