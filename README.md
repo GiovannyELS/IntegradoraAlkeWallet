@@ -57,7 +57,7 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
 
 A continuación, se muestran algunos Screenshots de la aplicación:
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Para realizar el correcto loggeo en la aplicación se debera crear en primer lugar el usuario.
 
 ![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20170128.png)
@@ -78,3 +78,15 @@ A continuación, se muestran algunos Screenshots de la aplicación:
 > ➡️ _Uso del ViewBinding:_ Se utiliza el Binding para las actualizaciones automáticas de las vistas.
 
 ![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20171043.png)
+
+> [!NOTE]
+➡️ _Uso del ViewModel y LiveData :_ Se utiliza el Binding para las actualizaciones automáticas de las vistas.>
+
+![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20173101.png)
+
+![](https://github.com/GiovannyELS/Modulo5AlkeWallet/blob/master/Captura%20de%20pantalla%202024-05-28%20192059.png)
+
+> [!IMPORTANT]
+> Ya que este es un proyecto que aún sigue vivo, se estarán haciendo modificaciones y próximas versiones. 
+
+
