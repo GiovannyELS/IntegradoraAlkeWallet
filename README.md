@@ -6,7 +6,7 @@ Este proyecto se lleva a cabo como un ejercicio dentro del curso “Desarrollo d
 
 Durante el módulo 5 Se nos encargó implementar la arquitectura MVVM y la lógica de comunicación entre View y View Model, para las pantallas necesarias que se realizaron en el módulo anterior.  Esto conlleva que se asegure una interacción fluida y eficaz entre estas capas esenciales en el proceso de desarrollo de la app.
 
-## Requerimientos
+## Requerimientos ☑️
 
 La Alke Wallet debe cumplir con una serie de características y requerimientos técnicos para garantizar su calidad y funcionalidad. Estos incluyen:
 
@@ -31,7 +31,7 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
    - Proporcionar una documentación detallada de la arquitectura
 
   
-## Características Principales
+## Características Principales 📊
 
 ➡️ _Creación de Usuarios:_ Se registra y verifica usuarios de manera segura. 
 
@@ -50,6 +50,6 @@ La Alke Wallet debe cumplir con una serie de características y requerimientos t
 
 ➡️ _Uso del ViewBinding:_ Se utiliza el Binding para las actualizaciones automáticas de las vistas. 
 
-### Screenshots
+### Screenshots 📘
 
 A continuación, se muestran algunos pantallazos de la aplicación:
