@@ -2,7 +2,7 @@
 
 Este proyecto se lleva a cabo como un ejercicio dentro del curso “Desarrollo de Aplicaciones Móviles Android Trainee” del Bootcamp Talento Digital para Chile. El ejercicio consiste en el desarrollo de una billetera virtual llamada Alke Wallet. El diseño del proyecto se centra en proporcionar una interfaz intuitiva y fácil de usar que permite a los usuarios realizar operaciones financieras básicas, tales como depósitos, retiros y consultas de saldo.
 
-## Objetivo
+## Objetivo 🏹
 
 Durante el módulo 5 Se nos encargó implementar la arquitectura MVVM y la lógica de comunicación entre View y View Model, para las pantallas necesarias que se realizaron en el módulo anterior.  Esto conlleva que se asegure una interacción fluida y eficaz entre estas capas esenciales en el proceso de desarrollo de la app.
 
