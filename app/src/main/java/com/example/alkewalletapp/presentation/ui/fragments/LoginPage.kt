@@ -16,6 +16,9 @@ import com.example.alkewalletapp.databinding.FragmentLoginPageBinding
 import com.example.alkewalletapp.presentation.viewmodel.LoginPageViewModel
 import com.example.alkewalletapp.presentation.viewmodel.LoginPageViewModelFactory
 
+/**
+ * Fragmento que representa la página de inicio de sesión de la aplicación.
+ */
 class LoginPage : Fragment() {
 
     private var _binding: FragmentLoginPageBinding? = null
@@ -23,6 +26,9 @@ class LoginPage : Fragment() {
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var validator: LoginPageViewModel
 
+    /**
+     * Se llama cuando el fragmento se crea. Inicializa las variables sharedPreferences y validator.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         sharedPreferences =
@@ -32,6 +38,9 @@ class LoginPage : Fragment() {
         )
     }
 
+    /**
+     * Infla el diseño para este fragmento.
+     */
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
@@ -39,6 +48,10 @@ class LoginPage : Fragment() {
         return binding.root
     }
 
+    /**
+     * Se llama inmediatamente después de que se ha llamado a onCreateView().
+     * Tiene los llamados para la navegación login por binding y validacion de credenciales
+     */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -66,12 +79,11 @@ class LoginPage : Fragment() {
         }
     }
 
+    /**
+     * Se llama cuando la vista del fragmento se destruye para liberar recursos.
+     */
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 }
-
-
-
-

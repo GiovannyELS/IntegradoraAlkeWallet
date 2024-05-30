@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.alkewalletapp.databinding.FragmentProfilePageBinding
 
-
+/**
+ * Fragmento que representa el perfil del usuario.
+ */
 class ProfilePage : Fragment() {
 
     lateinit var binding: FragmentProfilePageBinding

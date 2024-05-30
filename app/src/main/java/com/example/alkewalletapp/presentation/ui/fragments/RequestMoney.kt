@@ -9,6 +9,9 @@ import androidx.navigation.Navigation.findNavController
 import com.example.alkewalletapp.R
 import com.example.alkewalletapp.databinding.FragmentRequestMoneyBinding
 
+/**
+ * Fragmento que representa la vista de recibo de dinero de la aplicación.
+ */
 class RequestMoney : Fragment() {
 
     private lateinit var binding: FragmentRequestMoneyBinding

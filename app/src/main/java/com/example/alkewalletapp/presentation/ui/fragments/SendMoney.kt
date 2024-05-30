@@ -9,6 +9,9 @@ import androidx.navigation.Navigation.findNavController
 import com.example.alkewalletapp.R
 import com.example.alkewalletapp.databinding.FragmentSendMoneyBinding
 
+/**
+ * Fragmento que representa la vista de envio de dinero de la aplicación.
+ */
 class SendMoney : Fragment() {
 
     lateinit var binding: FragmentSendMoneyBinding

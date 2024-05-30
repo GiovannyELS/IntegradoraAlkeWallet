@@ -7,6 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.alkewalletapp.databinding.FragmentHomePageEmptyBinding
 
+
+/**
+ * Fragmento ejemplo que representa el home page de la aplicación vacio.
+ */
 class HomePageEmpty : Fragment() {
     lateinit var binding: FragmentHomePageEmptyBinding
 
