@@ -61,7 +61,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="63dp"
             android:alpha="0.50"
             android:fontFamily="@font/jua_normal"
             android:inputType="textEmailAddress"
@@ -107,7 +107,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="63dp"
             android:alpha="0.50"
             android:fontFamily="@font/jua_normal"
             android:inputType="textPassword"
