@@ -48,7 +48,6 @@ class UserAdapter : ListAdapter<User, UserAdapter.UserViewHolder>(UserDiffCallba
         fun bind(user: User) {
             binding.textView15.text = user.name
             binding.textView16.text = "$${user.balance}"
-            binding.imageView7.setImageResource(user.profileImage)
         }
     }
 }

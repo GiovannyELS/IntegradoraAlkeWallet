@@ -50,6 +50,11 @@ class SignupPageViewModel(application: Application) : AndroidViewModel(applicati
             return
         }
 
+        if (!validateemail(email)) {
+            toastMessage.value = "Correo electrónico no válido"
+            return
+        }
+
         if (!validatePassword(password)) {
             toastMessage.value = "La contraseña debe tener al menos 8 caracteres"
             return
@@ -84,5 +89,10 @@ class SignupPageViewModel(application: Application) : AndroidViewModel(applicati
      */
     private fun validatePassword(password: String): Boolean {
         return password.length >= 8
+    }
+
+    private fun validateemail(email: String): Boolean {
+        return email.length >= 8 && email.matches(Regex(
+            "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"))
     }
 }
