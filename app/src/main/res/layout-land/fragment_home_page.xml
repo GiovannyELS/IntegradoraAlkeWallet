@@ -62,8 +62,8 @@
         android:id="@+id/textView8"
         android:layout_width="221dp"
         android:layout_height="41dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="108dp"
         android:fontFamily="@font/jua_normal"
         android:text="Hola, Amanda!"
         android:textColor="#80FFFFFF"
@@ -131,25 +131,24 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="164dp"
         android:fontFamily="@font/jua_normal"
         android:text="@string/ultimas_transacciones"
         android:textColor="@color/black"
         android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonVerde1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
         android:id="@+id/botonVerde1"
         android:layout_width="165dp"
         android:layout_height="49dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/botonverde_alke"
-        app:layout_constraintBottom_toTopOf="@+id/textView12"
-        app:layout_constraintEnd_toStartOf="@+id/guideline13"
-        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
@@ -190,11 +189,11 @@
         android:id="@+id/boton_ingresar1"
         android:layout_width="165dp"
         android:layout_height="49dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginTop="136dp"
         android:background="@drawable/boton_redondeado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline7">
 
         <TextView
@@ -246,19 +245,16 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="356dp"
-        android:layout_height="419dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="382dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="140dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline7"
-        app:layout_constraintVertical_bias="0.84">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerUser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="369dp"
+            android:layout_height="247dp"
             tools:listitem="@layout/users_item" />
 
 
