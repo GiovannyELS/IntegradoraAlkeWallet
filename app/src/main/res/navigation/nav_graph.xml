@@ -52,6 +52,9 @@
         <action
             android:id="@+id/action_homePage_to_requestMoney"
             app:destination="@id/requestMoney" />
+        <action
+            android:id="@+id/action_homePage_to_profilePage2"
+            app:destination="@id/profilePage2" />
     </fragment>
     <fragment
         android:id="@+id/homePageEmpty"

@@ -47,6 +47,11 @@ class HomePage : Fragment() {
 
         val navController = findNavController(view)
 
+        // Configuración de la imagen de perfil para navegar a la pantalla "profile".
+        binding.imageView10.setOnClickListener {
+            navController.navigate(R.id.action_homePage_to_profilePage2)
+        }
+
         // Configuración del botón "botonVerde1" para navegar a la pantalla "SendMoney".
         binding.botonVerde1.setOnClickListener {
             navController.navigate(R.id.action_homePage_to_sendMoney)

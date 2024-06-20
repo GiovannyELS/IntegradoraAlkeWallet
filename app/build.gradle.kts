@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -42,10 +43,37 @@ android {
 
 dependencies {
 
+
+    val lifecycle_version = "2.8.0"
+    val arch_version = "2.2.0"
+    val nav_version = "2.7.7"
+    val room_version = "2.6.1"
+
+
+
+
+    // ViewModel
     implementation(libs.lifecycle.viewmodel.ktx)
+    // LiveData
     implementation(libs.lifecycle.livedata.ktx)
-    implementation(libs.navigation.fragment)
-    implementation(libs.navigation.ui)
+    //navigation
+    implementation(libs.navigation.fragment.ktx)
+    implementation(libs.navigation.ui.ktx)
+    //retrofit
+    implementation (libs.retrofit)
+    //Picasso
+    implementation (libs.picasso)
+    //gson
+    implementation (libs.gson)
+    //gson converter
+    implementation (libs.converter.gson)
+    //Room
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
+    //Interceptora
+    implementation(libs.okhttp)
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
