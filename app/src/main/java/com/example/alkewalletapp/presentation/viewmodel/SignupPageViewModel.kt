@@ -4,18 +4,30 @@ import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavController
 import com.example.alkewalletapp.R
+import com.example.alkewalletapp.data.response.UserResponse
+import com.example.alkewalletapp.domain.UserUseCase
+import kotlinx.coroutines.launch
+import retrofit2.Response
 
 /**
  * ViewModel para la página de registro.
  * Esta clase maneja la lógica de registro de usuario, validación de datos y almacenamiento
  * de la información del usuario en `SharedPreferences`.
  */
-class SignupPageViewModel(application: Application) : AndroidViewModel(application) {
-    private val sharedPreferences: SharedPreferences =
-        application.getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
+class SignupPageViewModel(
+   // application: Application,
+    private val useCase: UserUseCase) : ViewModel () {
+   // private val sharedPreferences: SharedPreferences =
+    //    application.getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
+
+    private val newUser = MutableLiveData<Result<Response<UserResponse>>>()
+    val livedata : LiveData<Result<Response<UserResponse>>> = newUser
 
     /**
      * Mensaje de notificación para el usuario.
@@ -65,13 +77,28 @@ class SignupPageViewModel(application: Application) : AndroidViewModel(applicati
             return
         }
 
-        with(sharedPreferences.edit()) {
-            putString("name", name)
-            putString("apellido", apellido)
-            putString("email", email)
-            putString("password", password)
-            apply()
+//        with(sharedPreferences.edit()) {
+//            putString("name", name)
+//            putString("apellido", apellido)
+//            putString("email", email)
+//            putString("password", password)
+//            apply()
+//        }
+
+        viewModelScope.launch {
+            try {
+                var response = useCase.createUser(UserResponse( 0,name, apellido, email,
+                    password,null,1,null,null))
+                if (response.isSuccessful) {
+                    newUser.postValue(Result.success(response))
+                } else {
+                    newUser.postValue(Result.failure(Exception("Error al registrar usuario")))
+                }
+            } catch (e: Exception) {
+                newUser.postValue(Result.failure(e))
+            }
         }
+
 
         toastMessage.value = "Registro exitoso."
         navController.navigate(R.id.action_signupPage_to_loginsignup)
@@ -95,4 +122,7 @@ class SignupPageViewModel(application: Application) : AndroidViewModel(applicati
         return email.length >= 8 && email.matches(Regex(
             "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"))
     }
+
+
+
 }

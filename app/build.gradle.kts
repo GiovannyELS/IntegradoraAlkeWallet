@@ -44,6 +44,7 @@ android {
 dependencies {
 
 
+    implementation(libs.ui.desktop)
     val lifecycle_version = "2.8.0"
     val arch_version = "2.2.0"
     val nav_version = "2.7.7"

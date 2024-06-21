@@ -1,5 +1,6 @@
 package com.example.alkewalletapp.presentation.ui.fragments
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,11 +8,18 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.alkewalletapp.R
+import com.example.alkewalletapp.data.local.database.AppDatabase
+import com.example.alkewalletapp.data.network.api.WalletServiceAPI
+import com.example.alkewalletapp.data.network.retrofit.RetrofitHelper
+import com.example.alkewalletapp.data.repository.RepositoryImp
 import com.example.alkewalletapp.databinding.FragmentSignupPageBinding
+import com.example.alkewalletapp.domain.UserUseCase
 import com.example.alkewalletapp.presentation.viewmodel.SignupPageViewModel
+import com.example.alkewalletapp.presentation.viewmodel.ViewModelFactory
+
 
 /**
  * Fragmento que representa la página de registro de la aplicación.
@@ -23,7 +31,7 @@ class SignupPage : Fragment() {
 
     private var _binding: FragmentSignupPageBinding? = null
     private val binding get() = _binding!!
-    private val viewModel: SignupPageViewModel by viewModels()
+    private lateinit var viewModel: SignupPageViewModel
 
     /**
      * Infla el diseño para este fragmento.
@@ -42,6 +50,15 @@ class SignupPage : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val apiservice = RetrofitHelper.getRetrofit().create(WalletServiceAPI::class.java)
+        val application = requireActivity().application
+        val baseDatos = AppDatabase.getDatabase(application)
+        val repository = RepositoryImp (apiservice, baseDatos.userDAO())
+        val useCase = UserUseCase(repository)
+        val viewModelFactory = ViewModelFactory(useCase)
+        viewModel = ViewModelProvider(this, viewModelFactory).get(SignupPageViewModel::class.java)
+
+
         // Configuración del botón "Crear cuenta" para registrar un nuevo usuario.
         binding.botoncrearcuenta2.setOnClickListener {
             registerUser()
@@ -53,9 +70,13 @@ class SignupPage : Fragment() {
         }
 
         // Se genera el observador
-        viewModel.toastMessage.observe(viewLifecycleOwner, Observer { message ->
-            Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
-        })
+        viewModel.livedata.observe(viewLifecycleOwner){result ->
+            result.onSuccess {
+                Toast.makeText(requireContext(), "Usuario registrado correctamente", Toast.LENGTH_SHORT).show()
+                findNavController().navigate(R.id.action_signupPage_to_loginPage)
+            }
+           result.onFailure { Toast.makeText(requireContext(), "Error al registrar usuario", Toast.LENGTH_SHORT).show() }
+        }
     }
 
     /**
@@ -69,6 +90,7 @@ class SignupPage : Fragment() {
         val rePassword = binding.editTextRePassword.text.toString()
 
         viewModel.registerUser(name, apellido, email, password, rePassword, findNavController())
+
     }
 
     /**

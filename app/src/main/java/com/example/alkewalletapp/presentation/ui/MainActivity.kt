@@ -7,8 +7,6 @@ import com.example.alkewalletapp.databinding.ActivityMainBinding
 
 /**
  * La actividad principal de la aplicación.
- *
- * Esta actividad se encarga de inicializar la interfaz de usuario principal y se invoca el binding
  */
 class MainActivity : AppCompatActivity() {
 
@@ -21,5 +19,3 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 }
-
-

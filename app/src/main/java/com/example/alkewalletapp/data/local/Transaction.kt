@@ -1,12 +1,9 @@
 package com.example.alkewalletapp.data.local
 
-
-
 /**
  * Representa datos para la transacción en la wallet.
  */
-
-data class Transaction (
+data class Transaction(
     val profileImage: Int,
     val transactionType: Int,
     val name: String,
@@ -14,7 +11,3 @@ data class Transaction (
     val operator: String,
     val amount: Double
 )
-
-
-
-
