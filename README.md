@@ -4,33 +4,17 @@ Este proyecto se lleva a cabo como un ejercicio dentro del curso “Desarrollo d
 
 ## Objetivo 🏹
 
-Durante el módulo 5 Se nos encargó implementar la arquitectura MVVM y la lógica de comunicación entre View y View Model, para las pantallas necesarias que se realizaron en el módulo anterior.  Esto conlleva que se asegure una interacción fluida y eficaz entre estas capas esenciales en el proceso de desarrollo de la app.
-
+Durante el módulo 6 Se nos encargó hacer conexión API y mantener datos en base local, a fin de completar el proceso completo de una applicación móvil. 
 ## Requerimientos ☑️
 
-La Alke Wallet debe cumplir con una serie de características y requerimientos técnicos para garantizar su calidad y funcionalidad. Estos incluyen:
-
-1. **Definición de Interfaces:**
-
-   - Interfaz para la capa View que describa los métodos y propiedades utilizados por el View Model para comunicarse con la Vista.
-   - Interfaz para el View Model que declare los métodos y propiedades disponibles para la Vista.
-
-2. **Implementación de Data Binding:**
-   - Mecanismo de data binding para permitir la actualización automática de la Vista cuando los datos en el View Model cambien y viceversa.
-
-3. **Uso de Eventos:**
-   - Implementación de eventos o mecanismos de notificación para informar a la Vista sobre eventos importantes o cambios en el View Model.
-
-4. **Manejo de Comandos:**
-   - Estructura para el manejo de comandos desde la Vista al View Model.
-
-5. **Validación de Datos:**
-   - Implementación de mecanismos de validación de datos en el View Model.
-
-6. **Documentación:**
-   - Proporcionar una documentación detallada de la arquitectura
+**La Alke Wallet debe cumplir con una serie de características y requerimientos técnicos para garantizar su calidad y funcionalidad. Estos incluyen:**
 
 
+ 
+ Se validará que todas las funcionalidades establecidas en los requerimientos funcionales se implementen de manera correcta y completa. Esto incluye el registro, inicio de sesión, visualización de
+ operaciones, realización de transacciones virtuales y almacenamiento local. Se comprobará que las librerías utilizadas, como Retrofit, Room y Picasso, se integren de manera efectiva en la aplicación y 
+ cumplan con su propósito. Se evaluará si las solicitudes a la API REST se realizan correctamente, si la base de datos local funciona adecuadamente y si las imágenes se cargan sin bloquear la fluidez de la 
+ aplicación. Se esperan pruebas unitarias para garantizar que todas las funcionalidades respondan de manera correcta y sin errores.
   
 ## Características Principales 📊
 
