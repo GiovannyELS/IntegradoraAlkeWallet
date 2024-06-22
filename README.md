@@ -8,10 +8,8 @@ Durante el módulo 6 Se nos encargó hacer conexión API y mantener datos en bas
 ## Requerimientos ☑️
 
 **La Alke Wallet debe cumplir con una serie de características y requerimientos técnicos para garantizar su calidad y funcionalidad. Estos incluyen:**
-
-
  
- Se validará que todas las funcionalidades establecidas en los requerimientos funcionales se implementen de manera correcta y completa. Esto incluye el registro, inicio de sesión, visualización de
+ Validar que todas las funcionalidades establecidas en los requerimientos funcionales se implementen de manera correcta y completa. Esto incluye el registro, inicio de sesión, visualización de
  operaciones, realización de transacciones virtuales y almacenamiento local. Se comprobará que las librerías utilizadas, como Retrofit, Room y Picasso, se integren de manera efectiva en la aplicación y 
  cumplan con su propósito. Se evaluará si las solicitudes a la API REST se realizan correctamente, si la base de datos local funciona adecuadamente y si las imágenes se cargan sin bloquear la fluidez de la 
  aplicación. Se esperan pruebas unitarias para garantizar que todas las funcionalidades respondan de manera correcta y sin errores.
